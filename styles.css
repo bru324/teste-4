@@ -1,0 +1,119 @@
+/* Estilo geral para fundo preto e dourado */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #3d3d3d); /* Gradiente de preto */
+    color: white;
+}
+
+/* Container com borda dourada */
+.container {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); /* Sombra dourada */
+    border: 2px solid #FFD700; /* Borda dourada */
+    width: 100%;
+    max-width: 350px; /* Limita a largura máxima */
+    margin: 10px;
+}
+
+/* Imagem de perfil centralizada e redonda */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #FFD700; /* Borda dourada */
+}
+
+/* Título estilizado */
+h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #FFD700; /* Dourado */
+}
+
+/* Parágrafo */
+p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Links */
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    background: #FFD700; /* Fundo dourado */
+    color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.links a:hover {
+    background: #b8860b; /* Dourado mais escuro ao passar o mouse */
+}
+
+/* Media Queries para Dispositivos Móveis */
+@media (max-width: 600px) {
+    /* Ajuste da largura do container em dispositivos móveis */
+    .container {
+        width: 90%; /* Tornar o container um pouco mais largo em telas pequenas */
+        padding: 15px;
+    }
+
+    /* Ajuste do tamanho da imagem de perfil em dispositivos móveis */
+    .profile-pic {
+        width: 120px; /* Reduzir o tamanho da imagem */
+        height: 120px;
+    }
+
+    /* Ajuste do tamanho da fonte */
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Ajustar o espaçamento dos links */
+    .links a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries para telas grandes (Ex: Desktop) */
+@media (min-width: 1000px) {
+    .container {
+        width: 350px; /* Aumentar a largura do container em telas grandes */
+    }
+
+    .profile-pic {
+        width: 180px; /* Aumentar o tamanho da imagem de perfil */
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
